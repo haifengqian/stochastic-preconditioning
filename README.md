@@ -13,6 +13,8 @@ Clone this repo and call `gmake` from inside the `src` directory.
 A library file `libhybrid_solver.a` will be compiled.
 APIs are in `src/HybridSolver.h` and are documented within.
 
+Tested with g++ 11.4.0. Example 4 tested with MATLAB 6.1. Please open an issue in case of any problems.
+
 ## Examples
 
 ### Example 1
@@ -49,7 +51,7 @@ Condition number comparison against ICT (threshold based incomplete cholesky fac
 This reproduces Figure 7.1 in the [2008 SISC paper](http://people.ece.umn.edu/users/sachin/jnl/sisc08.pdf) (see paper list above), and it demonstrates how one can retrieve the preconditioner matrices for advanced users.
 Call `gmake` from inside the `examples/example4` directory.
 Two executables `generate` and `precondition` will be compiled.
-Open Matlab, call either `run.m` or `run_small_set.m`.
+Open MATLAB, call either `run.m` or `run_small_set.m`.
 The script `run_small_set.m` takes a few minutes to finish.
 The script `run.m` takes hours to finish and the outcome will be the following plot.
 
